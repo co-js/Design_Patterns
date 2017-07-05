@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #A {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #00A0B0;
+    }
+  </style>
+</head>
+<body>
+<div id="A"></div>
+<script src="./slow-action-animate.js"></script>
+<script>
+  var div = document.getElementById('A');
+  var animate = new Animate(div);
+  animate.start('left', 500, 1000, 'strongEaseIn');
+</script>
+</body>
+</html>
